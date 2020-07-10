@@ -64,12 +64,11 @@ function makeSound(key)
         /*var audio=new Audio("sounds/tom-3.mp3")
       audio.play();*/
 function buttonAnimation(currentkey)
-{ var activeButton = document.querySelector("."+currentkey);
-activeButton.classList.add("pressed");
-setTimeout(function()
-{
-activeButton.classList.remove("pressed");
-},100);
-}
-    
-
+{ var activebutton = document.querySelector("."+currentkey);
+activebutton.classList.add("pressed");
+         setTimeout(function()
+             {
+                 activebutton.classList.remove("pressed");
+             },100);
+        
+        }
